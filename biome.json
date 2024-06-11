@@ -23,7 +23,23 @@
         "useIsArray": "error",
         "noConsoleLog": "error"
       }
-    }
+    },
+    "ignore": [
+      "**/node_modules/**",
+      "**/dist/**",
+      "**/build/**",
+      "**/coverage/**",
+      "**/public/**",
+      "**/storybook-static/**",
+      "**/*.d.ts",
+      "**/*.json",
+      "**/*.md",
+      "**/*.yml",
+      "**/*.yaml",
+      "**/*.lock",
+      "**/*.log",
+      "**/*.map"
+    ]
   },
   "javascript": {
     "globals": ["Global1"],
@@ -52,6 +68,22 @@
     "indentWidth": 2,
     "lineEnding": "lf",
     "lineWidth": 80,
-    "attributePosition": "auto"
+    "attributePosition": "auto",
+    "ignore": [
+      "**/node_modules/**",
+      "**/dist/**",
+      "**/build/**",
+      "**/coverage/**",
+      "**/public/**",
+      "**/storybook-static/**",
+      "**/*.d.ts",
+      "**/*.json",
+      "**/*.md",
+      "**/*.yml",
+      "**/*.yaml",
+      "**/*.lock",
+      "**/*.log",
+      "**/*.map"
+    ]
   }
 }
