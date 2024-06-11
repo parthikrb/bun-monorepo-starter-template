@@ -39,7 +39,8 @@
       "@monorepo/package-a": ["./packages/package-a/src/main.tsx"],
       "@monorepo/package-b": ["./packages/package-b/src/main.tsx"],
       "@monorepo/shared": ["./packages/shared/src/main.ts"],
-      "@monorepo/storybook": ["./packages/storybook/src/main.tsx"]
+      "@monorepo/storybook": ["./packages/storybook/src/main.tsx"],
+      "@monorepo/types": ["./packages/types/src/main.ts"]
     }
   },
   "exclude": [

@@ -1,5 +1,5 @@
 {
-  "name": "@monorepo/shared",
+  "name": "@monorepo/types",
   "private": true,
   "version": "1.0.0",
   "type": "module",
@@ -8,13 +8,8 @@
     "build": "tsc && vite build",
     "preview": "vite preview"
   },
-  "dependencies": {
-    "@monorepo/types": "workspace:*"
-  },
   "devDependencies": {
     "typescript": "^5.2.2",
-    "vite": "^5.2.0",
-    "@types/bun": "latest"
-  },
-  "module": "index.ts"
+    "vite": "^5.2.0"
+  }
 }
