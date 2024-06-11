@@ -1,0 +1,45 @@
+name: Storybook - Branch deployment
+
+on:
+  workflow_dispatch:
+  pull_request:
+    branches:
+      - main
+    paths:
+      - "packages/storybook/**"
+      - "packages/types/**"
+      - "package.json"
+      - "**/storybook.yml"
+
+concurrency:
+  group: storybook-branch-deploy-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  id-token: write
+  contents: read
+  actions: read
+  pull-requests: write
+
+jobs:
+  Lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 🚛 Checkout
+        uses: actions/checkout@v4
+
+      - name: 🪡 Setup bun
+        uses: oven-sh/setup-bun@v1
+        with:
+          bun-version: "latest"
+
+      - name: 🧶 Install dependencies
+        run: bun install
+
+      - name: 🧣 Setup Biome CLI
+        uses: biomejs/setup-biome@v2
+        with:
+          version: latest
+
+      - name: ⚖️ Run Biome
+        run: biome ci ./packages/storybook --reporter=github
