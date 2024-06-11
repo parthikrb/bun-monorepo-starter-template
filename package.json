@@ -1,0 +1,17 @@
+{
+  "name": "bun-monorepo",
+  "type": "module",
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "@storybook/addon-interactions": "^8.1.6",
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@storybook/react-vite": "^8.1.6"
+  }
+}
