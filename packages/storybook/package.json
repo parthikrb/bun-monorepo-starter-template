@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "lint": "biome lint --fix --verbose",
+    "lint": "biome lint --fix --verbose --files-ignore-unknown=true",
     "preview": "vite preview",
     "storybook": "bunx storybook dev -p 6006",
     "build-storybook": "bunx storybook build"
