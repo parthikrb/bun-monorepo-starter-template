@@ -18,6 +18,7 @@
   },
   "scripts": {
     "prepare": "husky",
-    "lint": "biome lint --fix --verbose --files-ignore-unknown=true"
+    "lint": "biome lint --fix --verbose --files-ignore-unknown=true",
+    "format": "biome format --fix --verbose --files-ignore-unknown=true"
   }
 }
