@@ -1,4 +1,4 @@
-name: Package B - Branch deployment
+name: Package A - Branch deployment
 
 on:
   workflow_dispatch:
@@ -6,15 +6,15 @@ on:
     branches:
       - main
     paths:
-      - "packages/package-b/**"
+      - "packages/package-a/**"
       - "packages/shared/**"
       - "packages/storybook/**"
       - "packages/types/**"
       - "package.json"
-      - "**/package-b.yml"
+      - "**/package-a.yml"
 
 concurrency:
-  group: package-b-branch-deploy-${{ github.ref }}
+  group: package-a-branch-deploy-${{ github.ref }}
   cancel-in-progress: true
 
 permissions:
@@ -44,4 +44,4 @@ jobs:
           version: latest
 
       - name: ⚖️ Run Biome
-        run: biome ci --reporter=github
+        run: biome ci .
