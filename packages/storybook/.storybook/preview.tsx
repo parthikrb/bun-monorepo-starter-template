@@ -1,8 +1,8 @@
-import { useEffect, type ReactNode } from 'react'
-import { addons } from '@storybook/preview-api'
-import { DARK_MODE_EVENT_NAME } from 'storybook-dark-mode'
 import { MantineProvider, useMantineColorScheme } from '@mantine/core'
 import '@mantine/core/styles.css'
+import { addons } from '@storybook/preview-api'
+import { useEffect, type ReactNode } from 'react'
+import { DARK_MODE_EVENT_NAME } from 'storybook-dark-mode'
 import { theme } from '../src/utils'
 // biome-ignore lint/style/useImportType: <explanation>
 import React from 'react'
