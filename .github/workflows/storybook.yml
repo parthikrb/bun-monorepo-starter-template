@@ -36,10 +36,13 @@ jobs:
       - name: 🧶 Install dependencies
         run: bun install
 
-      - name: 🧣 Setup Biome CLI
-        uses: biomejs/setup-biome@v2
-        with:
-          version: latest
+      - name: 🧪 Run unit test
+        run: cd packages/storybook && bun run test:ci
 
-      - name: ⚖️ Run Biome
-        run: biome ci ./packages/storybook --reporter=github
+      - name: 📃 Report Coverage
+        if: always()
+        uses: davelosert/vitest-coverage-report-action@v2
+        with:
+          name: Storybook
+          json-summary-path: ./packages/storybook/coverage/coverage-summary.json
+          json-final-path: ./packages/storybook/coverage/coverage-final.json
