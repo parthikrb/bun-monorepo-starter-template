@@ -37,7 +37,7 @@ jobs:
         run: bun install
 
       - name: 🧪 Run unit test
-        run: bun run test:ci
+        run: cd packages/storybook && bun run test:ci
 
       - name: 📃 Report Coverage
         if: always()
