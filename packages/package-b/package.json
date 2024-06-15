@@ -7,14 +7,16 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "lint": "biome lint --fix --verbose --files-ignore-unknown=true",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "test": "vitest",
+    "test:ci": "vitest --coverage.enabled true"
   },
   "dependencies": {
     "@monorepo/shared": "workspace:*",
     "@monorepo/storybook": "workspace:*",
     "@monorepo/types": "workspace:*",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
   },
   "devDependencies": {
     "@types/react": "^18.2.66",

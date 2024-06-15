@@ -9,11 +9,13 @@
     "lint": "biome lint --fix --verbose --files-ignore-unknown=true",
     "preview": "vite preview",
     "storybook": "bunx storybook dev -p 6006",
-    "build-storybook": "bunx storybook build"
+    "build-storybook": "bunx storybook build",
+    "test": "vitest",
+    "test:ci": "vitest --coverage.enabled true"
   },
   "dependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
     "@monorepo/types": "workspace:*"
   },
   "devDependencies": {

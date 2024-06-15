@@ -7,14 +7,16 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "lint": "biome lint --fix --verbose --files-ignore-unknown=true",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "test": "vitest",
+    "test:ci": "vitest --coverage.enabled true"
   },
   "dependencies": {
     "@monorepo/shared": "workspace:*",
     "@monorepo/storybook": "workspace:*",
     "@monorepo/types": "workspace:*",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react": "19.0.0-rc-fb9a90fa48-20240614",
+    "react-dom": "19.0.0-rc-fb9a90fa48-20240614"
   },
   "devDependencies": {
     "@types/react": "^18.2.66",
@@ -22,6 +24,7 @@
     "@typescript-eslint/eslint-plugin": "^7.2.0",
     "@typescript-eslint/parser": "^7.2.0",
     "@vitejs/plugin-react-swc": "^3.5.0",
+    "babel-plugin-react-compiler": "^0.0.0-experimental-938cd9a-20240601",
     "eslint": "^9.0.0",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.6",
