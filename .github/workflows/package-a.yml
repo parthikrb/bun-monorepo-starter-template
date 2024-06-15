@@ -44,3 +44,7 @@ jobs:
       - name: 📃 Report Coverage
         if: always()
         uses: davelosert/vitest-coverage-report-action@v2
+        with:
+          name: Package A
+          json-summary-path: ./packages/package-a/coverage/coverage-summary.json
+          json-final-path: ./packages/package-a/coverage/coverage-final.json
