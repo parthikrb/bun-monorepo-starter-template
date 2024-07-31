@@ -21,8 +21,8 @@
   "devDependencies": {
     "@types/react": "^18.2.66",
     "@types/react-dom": "^18.2.22",
-    "@typescript-eslint/eslint-plugin": "^7.2.0",
-    "@typescript-eslint/parser": "^7.2.0",
+    "@typescript-eslint/eslint-plugin": "^8.0.0",
+    "@typescript-eslint/parser": "^8.0.0",
     "@vitejs/plugin-react-swc": "^3.5.0",
     "babel-plugin-react-compiler": "^0.0.0-experimental-938cd9a-20240601",
     "eslint": "^9.0.0",
