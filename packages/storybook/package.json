@@ -33,7 +33,7 @@
     "@storybook/addon-onboarding": "8.2.9",
     "@storybook/addon-links": "8.2.9",
     "@storybook/addon-essentials": "8.2.9",
-    "@chromatic-com/storybook": "^1.5.0",
+    "@chromatic-com/storybook": "^2.0.0",
     "@storybook/addon-interactions": "8.2.9",
     "@storybook/addon-viewport": "8.2.9",
     "@storybook/react-vite": "8.2.9",
