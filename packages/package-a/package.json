@@ -26,7 +26,7 @@
     "@vitejs/plugin-react-swc": "^3.5.0",
     "babel-plugin-react-compiler": "^0.0.0-experimental-938cd9a-20240601",
     "eslint": "^9.0.0",
-    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-hooks": "^5.0.0",
     "eslint-plugin-react-refresh": "^0.4.6",
     "typescript": "^5.2.2",
     "vite": "^5.2.0"
