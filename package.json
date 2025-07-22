@@ -8,7 +8,7 @@
     "@biomejs/biome": "1.9.4",
     "@testing-library/dom": "^10.1.0",
     "@types/bun": "latest",
-    "@vitest/coverage-v8": "^2.0.0",
+    "@vitest/coverage-v8": "^3.0.0",
     "husky": "^9.0.11",
     "jsdom": "^26.0.0",
     "postcss": "^8.4.38",
@@ -16,7 +16,7 @@
     "postcss-simple-vars": "^7.0.1",
     "react": "19.0.0",
     "react-dom": "19.0.0",
-    "vitest": "^2.0.0"
+    "vitest": "^3.0.0"
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
