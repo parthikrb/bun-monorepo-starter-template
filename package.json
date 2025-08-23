@@ -5,7 +5,7 @@
     "packages/*"
   ],
   "devDependencies": {
-    "@biomejs/biome": "1.9.4",
+    "@biomejs/biome": "2.2.2",
     "@testing-library/dom": "^10.1.0",
     "@types/bun": "latest",
     "@vitest/coverage-v8": "^2.0.0",
