@@ -16,7 +16,7 @@
     "postcss-simple-vars": "^7.0.1",
     "react": "19.0.0",
     "react-dom": "19.0.0",
-    "vitest": "^2.0.0"
+    "vitest": "^3.2.6"
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
